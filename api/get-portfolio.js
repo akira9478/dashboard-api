@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   const origin = rawOrigin.toLowerCase().replace(/\/$/, "");
 
   // 2. 設定你允許的真實 GitHub Pages 網址（請確認跟你真實網址一致，不可加尾巴斜線）
-  const allowedOrigin = "https://akira9478.github.io/"; // 👈 請換成你的 GitHub Pages 網址
+  const allowedOrigin = "https://akira9478.github.io"; // 👈 請換成你的 GitHub Pages 網址
 
   // 3. 跨域安全檢查與回應標頭設定
   if (origin === allowedOrigin || process.env.NODE_ENV === "development") {
